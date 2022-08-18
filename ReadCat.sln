@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32802.440
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadOn", "ReadOn.csproj", "{9DCBDAA8-5F9D-4A9D-AFA0-D4D83813B626}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadCat", "ReadCat.csproj", "{9DCBDAA8-5F9D-4A9D-AFA0-D4D83813B626}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

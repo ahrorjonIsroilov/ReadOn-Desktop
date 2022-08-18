@@ -1,4 +1,4 @@
-﻿namespace ReadOn
+﻿namespace ReadCat
 {
     partial class Animation
     {
@@ -51,7 +51,7 @@
             this.animator.SetDecoration(this.captionText, Guna.UI2.AnimatorNS.DecorationType.None);
             this.captionText.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.captionText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(167)))), ((int)(((byte)(157)))));
-            this.captionText.Location = new System.Drawing.Point(112, 12);
+            this.captionText.Location = new System.Drawing.Point(112, 16);
             this.captionText.Name = "captionText";
             this.captionText.Size = new System.Drawing.Size(176, 25);
             this.captionText.TabIndex = 1;
@@ -62,7 +62,7 @@
             this.descriptionText.AutoSize = true;
             this.animator.SetDecoration(this.descriptionText, Guna.UI2.AnimatorNS.DecorationType.None);
             this.descriptionText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descriptionText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(200)))), ((int)(((byte)(193)))));
+            this.descriptionText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(66)))));
             this.descriptionText.Location = new System.Drawing.Point(83, 45);
             this.descriptionText.Name = "descriptionText";
             this.descriptionText.Size = new System.Drawing.Size(234, 17);
@@ -93,12 +93,12 @@
             // 
             // picBox
             // 
-            this.picBox.BackColor = System.Drawing.Color.White;
-            this.picBox.BackgroundImage = global::ReadOn.Properties.Resources.background;
+            this.picBox.BackColor = System.Drawing.Color.AliceBlue;
+            this.picBox.BackgroundImage = global::ReadCat.Properties.Resources.background;
             this.picBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.animator.SetDecoration(this.picBox, Guna.UI2.AnimatorNS.DecorationType.None);
             this.picBox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.picBox.Image = global::ReadOn.Properties.Resources.reading;
+            this.picBox.Image = global::ReadCat.Properties.Resources.reading;
             this.picBox.ImageRotate = 0F;
             this.picBox.Location = new System.Drawing.Point(0, 65);
             this.picBox.Name = "picBox";
@@ -111,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.Controls.Add(this.descriptionText);
             this.Controls.Add(this.captionText);
             this.Controls.Add(this.picBox);

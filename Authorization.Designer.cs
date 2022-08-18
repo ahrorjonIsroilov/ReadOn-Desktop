@@ -1,4 +1,4 @@
-﻿namespace ReadOn
+﻿namespace ReadCat
 {
     partial class Authorization
     {
@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Authorization));
             this.leftPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.animation1 = new ReadOn.Animation();
+            this.animation1 = new ReadCat.Animation();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.leftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -38,6 +38,7 @@
             // 
             // leftPanel
             // 
+            this.leftPanel.BackColor = System.Drawing.Color.AliceBlue;
             this.leftPanel.Controls.Add(this.animation1);
             this.leftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.leftPanel.Location = new System.Drawing.Point(0, 0);
@@ -47,19 +48,19 @@
             // 
             // animation1
             // 
-            this.animation1.BackColor = System.Drawing.Color.White;
-            this.animation1.Location = new System.Drawing.Point(0, 141);
+            this.animation1.BackColor = System.Drawing.Color.AliceBlue;
+            this.animation1.Location = new System.Drawing.Point(0, 121);
             this.animation1.Name = "animation1";
             this.animation1.Size = new System.Drawing.Size(400, 280);
             this.animation1.TabIndex = 0;
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.Image = global::ReadOn.Properties.Resources.full;
+            this.guna2PictureBox1.Image = global::ReadCat.Properties.Resources.ReadCat;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(447, 33);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(449, -26);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(300, 200);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(300, 303);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
@@ -74,6 +75,7 @@
             this.Controls.Add(this.leftPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Authorization";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Authorization";
@@ -86,7 +88,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel leftPanel;
-        private Animation animation1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Animation animation1;
     }
 }

@@ -1,20 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ReadOn
+namespace ReadCat
 {
     public partial class Authorization : Form
     {
+        private IOUtils ioUtils = new IOUtils();
+
         public Authorization()
         {
             InitializeComponent();
+        }
+        protected override void OnLoad(EventArgs e)
+        {
+            try
+            {
+                ioUtils.copyFilesToAppData("comfortaa");
+            }
+            catch (Exception ex) { MessageBox.Show("ko'chirilmadi\n" + ex.Message); }
+            base.OnLoad(e);
         }
     }
 }
