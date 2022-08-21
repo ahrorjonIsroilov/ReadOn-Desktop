@@ -1,7 +1,7 @@
 ﻿
-namespace ReadOn
+namespace ReadCat
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,10 @@ namespace ReadOn
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.signinButton = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -53,16 +54,34 @@ namespace ReadOn
             this.guna2Panel2.Size = new System.Drawing.Size(591, 46);
             this.guna2Panel2.TabIndex = 1;
             // 
-            // Form1
+            // signinButton
+            // 
+            this.signinButton.Animated = true;
+            this.signinButton.BorderRadius = 12;
+            this.signinButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.signinButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.signinButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.signinButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(200)))), ((int)(((byte)(193)))));
+            this.signinButton.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
+            this.signinButton.ForeColor = System.Drawing.Color.White;
+            this.signinButton.Location = new System.Drawing.Point(431, 475);
+            this.signinButton.Name = "signinButton";
+            this.signinButton.Size = new System.Drawing.Size(219, 45);
+            this.signinButton.TabIndex = 3;
+            this.signinButton.Text = "Sign out";
+            this.signinButton.Click += new System.EventHandler(this.signinButton_Click);
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 561);
+            this.Controls.Add(this.signinButton);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(850, 600);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReadOn";
             this.ResumeLayout(false);
@@ -73,6 +92,7 @@ namespace ReadOn
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Button signinButton;
     }
 }
 

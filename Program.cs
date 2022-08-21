@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
+using System.Linq;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace ReadCat
@@ -10,17 +13,23 @@ namespace ReadCat
         /// The main entry point for the application.
         /// </summary>
         /// 
-        private static readonly char seperator = Path.DirectorySeparatorChar;
 
         [STAThread]
         static void Main()
         {
             String appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            if (!Directory.Exists(appData + seperator + "ReadCat"))
-                Directory.CreateDirectory(appData + seperator + "ReadCat");
+            if (!Directory.Exists(appData + Utils.sep + "ReadCat"))
+            {
+                Directory.CreateDirectory(appData + Utils.sep + "ReadCat");
+            }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Authorization());
+            if (!(Process.GetProcessesByName(Path.GetFileNameWithoutExtension(Assembly.GetEntryAssembly().Location)).Count() > 1))
+            {
+                if (String.IsNullOrEmpty(Properties.Settings.Default.token))
+                    Application.Run(new Authorization());
+                else Application.Run(new MainForm());
+            }
         }
     }
 }

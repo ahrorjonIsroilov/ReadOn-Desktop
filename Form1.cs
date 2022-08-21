@@ -1,12 +1,19 @@
 ﻿using System.Windows.Forms;
 
-namespace ReadOn
+namespace ReadCat
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void signinButton_Click(object sender, System.EventArgs e)
+        {
+            Properties.Settings.Default.token = null;
+            Properties.Settings.Default.Save();
+            Application.Restart();
         }
     }
 }
